@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Waypoint Creator Group</title>
+<meta name="description" content="Get in touch with Waypoint Creator Group — for creators applying for representation or brands looking for a campaign fit.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="canonical" href="https://www.example.com/pages/contact.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="visually-hidden">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 26L14 8L18 15L22 9L28 26H4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="14" cy="8" r="2" fill="#C69A44"/></svg>
+      <span>Waypoint<span class="sub">Creator Group</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="../index.html">Home</a>
+      <a href="creators.html">Creators</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="is-active">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--arrow">Start a conversation</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Tell us where you're coming from.</h1>
+      <p class="lede">Creator or brand, one form gets you a direct reply — usually within two business days.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 4rem; align-items: start;">
+
+        <form id="contact-form" class="reveal" novalidate>
+          <div class="form-grid">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="field">
+              <label for="channel">Channel or company name</label>
+              <input type="text" id="channel" name="channel" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="inquiry-type">I'm reaching out as a...</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">Select one</option>
+                <option value="Creator">Creator applying for representation</option>
+                <option value="Brand">Brand interested in a campaign</option>
+                <option value="Press">Press or media</option>
+                <option value="Other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="A link to your channel, or a short note on what you're looking for."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--arrow" style="margin-top: 1.6rem;">Send message</button>
+          <p class="form-status" role="status"></p>
+          <p class="form-note text-muted">Submitting opens your email client with this message pre-filled — nothing is sent automatically. Prefer to write directly? Email <a href="mailto:hello@example.com" style="color: var(--color-brass);">hello@example.com</a>.</p>
+        </form>
+
+        <div class="reveal">
+          <div class="callout" style="margin-bottom: 1.5rem;">
+            <h4>For creators</h4>
+            <p>Include a link to your channel and roughly what size sponsorships you're hoping to land — it helps us reply with something useful instead of a generic response.</p>
+          </div>
+          <div class="callout callout--rust" style="margin-bottom: 1.5rem;">
+            <h4>For brands</h4>
+            <p>A rough budget range and campaign goal (awareness, launch, performance) lets us suggest a realistic creator match right away.</p>
+          </div>
+          <div class="small-print">
+            <p style="margin-bottom: 0.6rem;">Waypoint Creator Group</p>
+            <!-- EDIT ME: fill in once you have a registered address / KVK
+                 number. Until then this is accurate as-is. -->
+            <p>Operating from the Netherlands. Business registration in progress (KVK).</p>
+            <p style="margin-top: 0.6rem;">hello@example.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 26L14 8L18 15L22 9L28 26H4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="14" cy="8" r="2" fill="#C69A44"/></svg>
+          <span>Waypoint<span class="sub">Creator Group</span></span>
+        </a>
+        <p>Representation for overlanding creators in brand sponsorship deals. We handle outreach, negotiation and contracts — you keep making the content that got you here.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="creators.html">For creators</a></li>
+          <li><a href="brands.html">For brands</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Registration</h4>
+        <ul>
+          <li class="small-print">Registration in progress (KVK)</li>
+          <li class="small-print">VAT number: pending</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="small-print">© <span data-year></span> Waypoint Creator Group. Operated by [Your legal name], trading as Waypoint Creator Group.</p>
+      <div class="footer-legal">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner">
+  <p>We store a small local-storage flag to remember your cookie choice. No analytics or advertising cookies run on this site yet — see our <a href="../privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn--ghost" data-cookie-decline>Decline</button>
+    <button class="btn btn--primary" data-cookie-accept>Accept</button>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
