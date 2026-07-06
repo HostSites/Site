@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Shipwright Talent</title>
+<meta name="description" content="Get in touch with Shipwright Talent, for creators applying for representation or brands looking for a campaign fit.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="canonical" href="https://www.example.com/pages/contact.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="visually-hidden">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E1015"/><path d="M9 11 L16 16 L9 21" fill="none" stroke="#FF7A45" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="18" y="19" width="7" height="2.6" rx="1.3" fill="#FF7A45"/></svg>
+      <span><span data-cfg="business.shortName">Shipwright</span><span class="sub" data-cfg="business.suffix">Talent</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="../index.html">Home</a>
+      <a href="creators.html">Creators</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="is-active">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--arrow">Start a conversation</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow" data-cfg="pages.contact.eyebrow">Get in touch</p>
+      <h1 data-cfg="pages.contact.title">Tell us where you're coming from.</h1>
+      <p class="lede" data-cfg="pages.contact.lede">Creator or brand, one form gets you a direct reply by email, usually within two business days.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 4rem; align-items: start;">
+
+        <form id="contact-form" class="reveal" novalidate>
+          <div class="form-grid">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="field">
+              <label for="channel">Channel or company name</label>
+              <input type="text" id="channel" name="channel" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="inquiry-type">I'm reaching out as a...</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">Select one</option>
+                <option value="Creator">Creator applying for representation</option>
+                <option value="Brand">Brand interested in a campaign</option>
+                <option value="Press">Press or media</option>
+                <option value="Other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="A link to your channel or product, and a short note on what you're looking for."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--arrow" style="margin-top: 1.6rem;">Send message</button>
+          <p class="form-status" role="status"></p>
+          <p class="form-note text-muted">Submitting opens your email client with this message pre-filled. Nothing is sent automatically. Prefer to write directly? Email <a data-cfg-mailto href="mailto:hello@example.com" style="color: var(--accent);" data-cfg="contact.email">hello@example.com</a>.</p>
+        </form>
+
+        <div class="reveal">
+          <div class="callout" style="margin-bottom: 1.5rem;">
+            <h4>For creators</h4>
+            <p>Include a link to your channel, the AI tools you build with most, and roughly what size sponsorships you're hoping to land. It helps us reply with something useful instead of a generic response.</p>
+          </div>
+          <div class="callout callout--mint" style="margin-bottom: 1.5rem;">
+            <h4>For brands</h4>
+            <p>A rough budget range and campaign goal, awareness, launch, or performance, lets us suggest a realistic creator match right away.</p>
+          </div>
+          <div class="small-print">
+            <p style="margin-bottom: 0.6rem; color: var(--text-muted);"><span data-cfg="business.name">Shipwright Talent</span></p>
+            <p data-cfg-show="registration.status" data-cfg-equals="hobby"><span data-cfg="registration.hobbyNote"></span></p>
+            <p data-cfg-show="registration.status" data-cfg-equals="pending">Operating from <span data-cfg="business.country"></span>. KVK registration pending.</p>
+            <p data-cfg-show="registration.status" data-cfg-equals="registered">Operating from <span data-cfg="business.country"></span>. KVK <span data-cfg="registration.kvkNumber"></span>.</p>
+            <p style="margin-top: 0.6rem;"><span data-cfg="contact.email">hello@example.com</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E1015"/><path d="M9 11 L16 16 L9 21" fill="none" stroke="#FF7A45" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="18" y="19" width="7" height="2.6" rx="1.3" fill="#FF7A45"/></svg>
+          <span><span data-cfg="business.shortName">Shipwright</span><span class="sub" data-cfg="business.suffix">Talent</span></span>
+        </a>
+        <p data-cfg="business.footerDescription">Representation for AI app-builder and AI dev-tool creators in brand sponsorship deals. We handle outreach, negotiation and contracts. You keep making the content that got you here.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="creators.html">For creators</a></li>
+          <li><a href="brands.html">For brands</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a data-cfg-mailto href="mailto:hello@example.com" data-cfg="contact.email">hello@example.com</a></li>
+        </ul>
+        <ul data-socials style="margin-top: 0.7rem;"></ul>
+      </div>
+      <div class="footer-col" data-registration-block>
+        <h4>Status</h4>
+        <ul>
+          <li class="small-print" data-reg-line="hobby" data-cfg="registration.hobbyNote"></li>
+          <li class="small-print" data-reg-line="pending">KVK registration: pending<br>VAT number: pending</li>
+          <li class="small-print" data-reg-line="registered"><span data-reg-kvk>KVK: —</span><br><span data-reg-vat>VAT: —</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="small-print">© <span data-year></span> <span data-cfg="business.name">Shipwright Talent</span>.</p>
+      <div class="footer-legal">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../config.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

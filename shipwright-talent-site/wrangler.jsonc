@@ -1,0 +1,8 @@
+{
+  // Optional: only needed if you deploy this site with Cloudflare Pages
+  // instead of GitHub Pages. Run `npx wrangler pages deploy .` from this
+  // folder once you've installed wrangler (`npm install -g wrangler`).
+  "name": "shipwright-talent-site",
+  "compatibility_date": "2026-07-06",
+  "pages_build_output_dir": "."
+}
